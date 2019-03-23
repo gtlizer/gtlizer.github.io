@@ -1,0 +1,1038 @@
+@keyframes callnow{
+    0%{
+        right:-100%;
+    }
+
+    100%{
+        right:1%;
+    }
+}
+
+
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #E8EBEC;
+    position: relative;
+}
+
+a{
+    color:white;
+    text-decoration: none;
+}
+
+a:hover{
+    color:white;
+    text-decoration: none;
+}
+
+
+/* ---------------NAVBAR------------------*/
+
+.navbar{
+    font-family: 'Cardo', serif;
+    background-color: #3D474E;
+    color:white;
+    z-index: 50;
+}
+
+.navbar-brand{
+    position: absolute;
+    font-size: 1.75em;
+    left:50%;
+    transform: translateX(-50%);
+}
+
+.navbar-collapse{
+    position: absolute;
+    top:100%;
+    left:0%;
+    width: 100%;
+    background-color: #3D474E;
+}
+
+button:focus{
+    outline-color: white;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
+}
+
+
+/* -----------LANDING --------------*/
+
+.landing-img{
+    position: relative;
+    color:white;
+    text-align: center;
+}
+
+.landing-img::after{
+    content: '';
+    display: block;
+	position: absolute;
+	top: 0;
+    left: 0;
+    height: 200px;
+    background-image: linear-gradient(white, black);
+    opacity: .6;
+}
+
+.landing-txt{
+    position: absolute;
+    left:50%;
+    transform: translateX(-50%);
+    top:65%;
+    text-align: center;
+    font-family: 'Cardo', serif;
+    width:100%;
+    text-shadow: 2px 2px 3px black;    z-index: 3;
+}
+
+/* ----------BOOK NOW---------------*/
+
+.book-now{
+    background-color: #D58E4D;
+    color:white;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    text-align: center;
+}
+
+.book-now:hover{
+    cursor: pointer;
+}
+
+.book-now::before{
+ position:absolute;
+  content: " ";
+  display:block;
+  left:0;
+  width:100%;
+  border-style: solid;
+  border-color: transparent transparent transparent #D58E4D;
+  transform: rotateY(180deg)
+}
+
+.book-now::after{
+ position:absolute;
+  content: " ";
+  display:block;
+  left:0;
+  width:100%;
+  border-style: solid;
+  border-color: transparent #D58E4D transparent transparent;
+  transform: rotateY(180deg)
+}
+
+.book-now-txt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: font-size .2s;
+}
+
+/* ----------ABOUT----------------- */
+
+.about{
+    background: url(img/half-dome-moon.jpg);
+    background-size: cover;
+    color:white;
+}
+
+.about-header{
+    font-family: 'Cardo', serif;
+    font-weight: 600;
+    text-align: right;
+}
+
+.about-body{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
+    text-align: center;
+}
+
+/* -----------WEATHER------------------ */
+
+.weather{
+    background-color: #183E64;
+    color:white;
+    height:100%;
+}
+
+
+.weather-container{
+    padding: 0px;
+}
+
+
+/* ----------PICS----------------------- */
+
+.pics{
+    background-color: #E8EBEC;
+    color:black;
+}
+
+.pics-title{
+    font-family: 'Cardo', serif;
+    font-weight: 600;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.pics .card{
+    border-radius: 15px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.31);
+    padding:0px;
+    border:none;
+    background-color: transparent;
+}
+
+.pics .card::after{
+    content: '';
+    display: block;
+	position: absolute;
+	bottom: 0;
+    left: 0;
+    height: 40%;
+    width:100%;
+    background-image: linear-gradient(transparent, black);
+    opacity: .4;
+    border-radius: 15px;
+}
+
+.pics img{
+    border-radius: 15px;
+}
+
+.card-img-top{
+    object-fit: cover;
+    height:100%;
+}
+
+.pics-txt{
+    position: absolute;
+    z-index: 10;
+    color:white;
+    bottom: 5%;
+    left:7%;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.96);
+}
+
+/* ----------HIGHLY RECOMMENDED------------ */
+
+.highly-recommend{
+    background-color: #E8EBEC;
+    color:black;
+}
+
+.highly-recommend .card{
+    color:white;
+    border-radius: 15px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.31);
+    width: 95vw;
+    height: 50%;
+    border:none;
+}
+
+.hr-title{
+    font-family: 'Cardo', serif;
+    font-weight: 600;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.highly-recommend .card-body{
+    background-color: #183E64;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
+    text-align: center;
+    border-radius: 0 0 15px 15px;
+    padding: 7px 10px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.31);
+}
+
+.card-img-top{
+    border-radius: 15px 15px 0 0;
+}
+
+.hr-nametag{
+    position: absolute;
+    left:0;
+    background-color: #D58E4D;
+    font-family: 'Cardo', serif;
+    font-weight: 600;
+    padding: 3px 7px;
+}
+
+
+/* ----------THINGS TO DO--------------- */
+
+.to-do{
+    background-color: #E8EBEC;
+    color:black;
+}
+
+.to-do-title{
+    font-family: 'Cardo', serif;
+    font-weight: 600;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.to-do-txt{
+    display: block;
+    color:white;
+    font-size: 38px;
+    font-weight: 500;
+    text-align: center;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.75);
+    font-family: 'Ubuntu', sans-serif;
+    z-index: 11;
+    transition: font-size .2s;
+}
+
+.activity{
+    height: 35vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.activity:hover{
+    cursor: pointer;
+}
+
+.activity::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background-color: rgba(0,0,0,0.2);
+}
+
+.hike{
+    background: url(img/half-dome.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.kayak{
+    background: url(img/kayak.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.climb{
+    background: url(img/yosemite-falls.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.fish{
+    background: url(img/fishing.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* ----------DEAL & OFFERS---------------*/
+
+.deals{
+    background-color: #D58E4D;
+    color:white;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    text-align: center;
+}
+
+.deals:hover{
+    cursor: pointer;
+}
+
+.deals-txt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: font-size .2s;
+}
+
+/* ----------CONTACT--------------- */
+
+.contact{
+    background-color: white;
+    color:#3D474E;
+}
+
+.contact-title{
+    font-family: 'Cardo', serif;
+    font-weight: 600;
+}
+
+.contact label{
+    font-family: 'Cardo', serif;
+    font-weight: 500;
+}
+
+input::placeholder, textarea::placeholder{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
+}
+
+.submit-btn{
+    background-color: #3D474E;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    border-radius: 16px;
+}
+
+.contact button{
+    padding:4px 25px;
+    margin:0px auto;
+}
+
+/* --------------FOOTER------------------- */
+
+.footer-top{
+    background-color: #183E64;
+    color:white;
+    font-family: 'Cardo', serif;
+    font-weight: 500;
+}
+
+.footer-top img{
+    width:30px;
+}
+
+.footer-bottom{
+    background-color: #3D474E;
+    color:white;
+}
+
+.footer-bottom-txt{
+    font-family: 'Cardo', serif;
+    font-weight: 500;
+}
+
+.footer-lower{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.socials i{
+    margin: 0px 5px;
+}
+
+.gray-footer{
+    width:100vw;
+    height:5vh;
+    background-color: #3D474E;
+}
+
+/* --------------CALL NOW---------------- */
+
+.call-now{
+    bottom: 15px;
+    right:-100%;
+    width: 220px;
+    z-index: 100;
+    font-family: 'arial';
+    text-align: center;
+    animation: callnow .7s ease 2s 1 forwards; 
+}
+
+.call-now .col-12{
+    padding:0px;
+}
+
+.container{
+    padding:0px;
+}
+
+.fa-phone{
+    transform: rotateY(180deg);
+    padding: 0px 10px;
+}
+
+
+
+
+/* --------------------------------------- */
+/* --------------------------------------- */
+/* -----------------PHONE----------------- */
+/* --------------------------------------- */
+/* --------------------------------------- */
+
+
+
+@media screen and (min-width: 300px) {
+
+
+/* NAV */
+
+.nav-item:hover{
+    background-color: #183E64;
+    color:white;
+}
+
+.nav-link{
+    font-size: 1em;
+}
+
+/* LANDING IMG */
+
+.landing-img{
+    background: url(img/orange-snow.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    height:500px;
+}
+
+.landing-txt{
+    font-size: 2.5em;
+}
+
+.landing-subtxt{
+    font-size: 28px;
+}
+
+/* ABOUT */
+
+.about{
+    height:32vh;
+}
+
+.about-txt{
+    margin:20px 15px;
+}
+
+.about-header{
+    font-size: 38px;
+}
+
+.about-body{
+    font-size: 14px;
+    margin-top: 40px;
+}
+
+/* BOOK NOW */
+
+.book-now-txt{
+    transform: rotate(-5deg);
+    font-size: 38px;
+}
+
+.book-now{
+    height:80px;
+}
+
+.book-now:hover .book-now-txt{
+    font-size: 42px;
+}
+
+.book-now::before{
+  top:-30px;
+  border-width: 30px 0 0 100vw;
+}
+
+.book-now::after{
+  bottom:-30px;
+  border-width: 0 100vw 30px 0;
+}
+
+
+/* MAP */
+
+.map{
+    height: 300px;
+}
+
+/* ----------PICS----------------------- */
+
+
+.pics-title{
+    font-size: 38px;
+}
+
+.pics-txt{
+    font-size: 26px;
+}
+
+/* ----------HIGHLY RECOMMENDED----------- */
+
+.hr-title{
+    font-size: 32px;
+}
+
+.highly-recommend .card-body{
+    font-size: 14px;
+    padding: 7px 10px;
+}
+
+.hr-nametag{
+    top:50%;
+}
+
+/* ----------THINGS TO DO--------------- */
+
+.to-do-title{
+    font-size: 32px;
+}
+
+.to-do p{
+    font-size: 30px;
+}
+
+.activity:hover .to-do-txt{
+    font-size: 40px;
+}
+
+.activity{
+    height: 35vh;
+}
+
+/* ----------DEAL & OFFERS---------------*/
+
+
+.deals-txt{
+    font-size: 32px;
+}
+
+.deals:hover .deals-txt{
+    font-size: 36px;
+}
+
+.deals{
+    height:80px;
+}
+
+/* ----------CONTACT--------------- */
+
+.contact-title{
+    font-size: 30px;
+}
+
+.contact label{
+    font-size: 20px;
+}
+
+/* --------------FOOTER------------------- */
+
+.footer-top{
+    font-size: 32px;
+}
+
+.footer-bottom-txt{
+    font-size: 20px;
+}
+
+.terms{
+    font-size: 13px;
+    margin-top: -30px;
+}
+
+.socials i{
+    margin: 0px 10px;
+    font-size: 30px;
+}
+
+.copyright{
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+.footer-top img{
+    width:32px;
+}
+
+
+
+}
+
+/* --------------------------------------- */
+/* --------------------------------------- */
+/* -----------------TABLET---------------- */
+/* --------------------------------------- */
+/* --------------------------------------- */
+
+
+
+@media screen and (min-width: 720px) {
+
+/* NAV */
+
+.nav-link{
+    font-size: 1.25em;
+}
+
+/* LANDING IMG */
+
+.landing-img{
+    height:600px;
+}
+
+.landing-txt{
+    font-size: 3em;
+}
+
+.landing-subtxt{
+    font-size: 32px;
+}
+
+/* ABOUT */
+
+.about{
+    height:50vh;
+}
+
+.about-txt{
+    margin:20px 30px;
+}
+
+.about-header{
+    font-size: 44px;
+}
+
+.about-body{
+    font-size: 22px;
+    margin-top: 100px;
+}
+
+/* BOOK NOW */
+
+.book-now{
+    height:80px;
+}
+
+.book-now-txt{
+    transform: rotate(-4deg);
+    font-size: 42px;
+}
+
+
+.book-now:hover .book-now-txt{
+    font-size: 46px;
+}
+
+.book-now::before{
+    top:-40px;
+    border-width: 40px 0 0 100vw;
+}
+
+.book-now::after{
+    bottom:-40px;
+    border-width: 0 100vw 40px 0;
+}
+
+
+/* MAP */
+
+.map{
+    height: 400px;
+}
+
+/* PICS */
+
+.pics-title{
+    font-size: 44px;
+}
+
+.pics-txt{
+    font-size: 36px;
+}
+
+/* ----------HIGHLY RECOMMENDED--------------- */
+
+.hr-title{
+    font-size: 44px;
+}
+
+.highly-recommend .card-body{
+    font-size: 18px;
+    padding: 7px 12px;
+}
+
+.hr-nametag{
+    top:50%;
+    padding: 5px 10px;
+    font-size: 25px;
+}
+
+
+
+/* ----------THINGS TO DO--------------- */
+
+.to-do-title{
+    font-size: 44px;
+}
+
+.to-do p{
+    font-size: 40px;
+}
+
+.activity:hover .to-do-txt{
+    font-size: 50px;
+}
+
+.activity{
+    height: 50vh;
+}
+
+/* ----------DEAL & OFFERS---------------*/
+
+
+.deals-txt{
+    font-size: 36px;
+}
+
+.deals:hover .deals-txt{
+    font-size: 40px;
+}
+
+.deals{
+    height:80px;
+}
+
+/* ----------CONTACT--------------- */
+
+.contact-title{
+    font-size: 44px;
+}
+
+.contact label{
+    font-size: 24px;
+}
+
+/* --------------FOOTER------------------- */
+
+.footer-top{
+    font-size: 36px;
+}
+
+.footer-bottom-txt{
+    font-size: 22px;
+}
+
+.terms{
+    font-size: 15px;
+    margin-top: -30px;
+}
+
+.socials i{
+    margin: 0px 20px;
+    font-size: 34px;
+}
+
+.copyright{
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+.footer-top img{
+    width:33px;
+}
+
+
+
+    
+}
+
+
+
+/* --------------------------------------- */
+/* --------------------------------------- */
+/* ---------------DESKTOP----------------- */
+/* --------------------------------------- */
+/* --------------------------------------- */
+
+@media screen and (min-width: 992px) {
+
+/* NAV */
+
+.navbar-brand{
+    left:8%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    z-index: 100;
+}
+
+.navbar-collapse{
+    position: static;
+}
+
+.nav-item:hover{
+    background-color: #3D474E;
+    color:white;
+}
+
+.nav-link{
+    font-size: 1.5em;
+}
+
+/* LANDING IMG */
+
+.landing-img{
+    background-image: url(img/sunset.jpg);
+    height:800px;
+    background-attachment: fixed;
+}
+
+.landing-txt{
+    font-size: 3.5em;
+}
+
+.landing-subtxt{
+    font-size: 36px;
+}
+
+/* ABOUT */
+
+.about{
+    height:75vh;
+}
+
+.about-txt{
+    margin:20px 35px;
+}
+
+.about-header{
+    font-size: 48px;
+}
+
+.about-body{
+    font-size: 30px;
+    margin-top: 280px;
+}
+
+/* BOOK NOW */
+    
+.book-now{
+    height:80px;
+}
+
+.book-now-txt{
+    transform: rotate(-3.5deg);
+    font-size: 46px;
+}
+
+.book-now:hover .book-now-txt{
+    font-size: 50px;
+}
+
+.book-now::before{
+    top:-60px;
+    border-width: 60px 0 0 100vw;
+}
+
+.book-now::after{
+    bottom:-60px;
+    border-width: 0 100vw 60px 0;
+}
+
+/* MAP */
+
+.map{
+    height: 500px;
+}
+
+/* PICS */
+
+.pics-title{
+    font-size: 48px;
+}
+
+.pics-txt{
+    font-size: 28px;
+}
+
+/* ----------HIGHLY RECOMMENDED--------------- */
+
+.hr-title{
+    font-size: 48px;
+}
+
+.highly-recommend .card-body{
+    font-size: 22px;
+    padding: 15px 15px;
+}
+
+.hr-nametag{
+    top:60%;
+    padding: 5px 15px;
+    font-size: 30px;
+}
+
+
+/* ----------THINGS TO DO--------------- */
+
+.to-do-title{
+    font-size: 48px;
+}
+
+.to-do p{
+    font-size: 40px;
+}
+
+.activity{
+    height: 40vh;
+}
+
+/* ----------DEAL & OFFERS---------------*/
+
+
+.deals-txt{
+    font-size: 40px;
+}
+
+.deals:hover .deals-txt{
+    font-size: 44px;
+}
+
+/* ----------CONTACT--------------- */
+
+.contact-title{
+    font-size: 48px;
+}
+
+.contact label{
+    font-size: 26px;
+}
+
+/* --------------FOOTER------------------- */
+
+.footer-top{
+    font-size: 42px;
+}
+
+.footer-bottom-txt{
+    font-size: 24px;
+}
+
+.terms{
+    font-size: 17px;
+    margin-top: -30px;
+}
+
+.socials i{
+    margin: 0px 30px;
+    font-size: 45px;
+}
+
+.copyright{
+    font-size: 17px;
+    margin-top: 12px;
+}
+
+.footer-top img{
+    width:40px;
+}
+    
+}
+
