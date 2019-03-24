@@ -190,6 +190,7 @@ button:focus{
     padding:0px;
     border:none;
     background-color: transparent;
+    cursor: pointer;
 }
 
 .pics .card::after{
@@ -445,7 +446,7 @@ input::placeholder, textarea::placeholder{
     z-index: 100;
     font-family: 'arial';
     text-align: center;
-    animation: callnow .7s ease 2s 1 forwards; 
+    animation: callnow .7s ease 4s 1 forwards; 
 }
 
 .call-now .col-12{
